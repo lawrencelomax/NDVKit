@@ -16,6 +16,11 @@ static const CGFloat kShadowFadeUpHeight = 10.0f;
 
 @implementation NDVShadowedTableView
 
+@synthesize displayOriginShadowOnly=_displayOriginShadowOnly;
+@synthesize originShadow=_originShadow;
+@synthesize topShadow=_topShadow;
+@synthesize bottomShadow=_bottomShadow;
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     
@@ -108,10 +113,5 @@ static const CGFloat kShadowFadeUpHeight = 10.0f;
     
     [super dealloc];
 }
-
-@synthesize displayOriginShadowOnly=_displayOriginShadowOnly;
-@synthesize originShadow=_originShadow;
-@synthesize topShadow=_topShadow;
-@synthesize bottomShadow=_bottomShadow;
 
 @end
