@@ -10,22 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-
-@interface NDVShadowedTableView : UITableView {
-
-  BOOL _displayOriginShadowOnly;
-
-  CAGradientLayer* _originShadow;
-	CAGradientLayer* _topShadow;
-	CAGradientLayer* _bottomShadow;
-
-}
-
+@interface NDVShadowedTableView : UITableViews
 
 @property (nonatomic, assign) BOOL displayOriginShadowOnly;
 @property (nonatomic, retain) CAGradientLayer* originShadow;
 @property (nonatomic, retain) CAGradientLayer* topShadow;
 @property (nonatomic, retain) CAGradientLayer* bottomShadow;
-
 
 @end
